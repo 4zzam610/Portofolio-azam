@@ -1,19 +1,186 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio</title>
-    <style>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Azzam - Portfolio</title>
+    <!-- Space Grotesk Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- Syne Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="./asset/logo.png" />
 
-    </style>
-</head>
-<body>
-  <header>
-    <div><img src="profile.jpg" alt="Profile Image"></div>
-   <nav>
+    <!-- CSS External -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header / Navbar -->
+    <header class="header">
+      <div class="container nav-container">
+        <nav class="nav-menu">
+          <a href="#hero" class="nav-link">Home</a>
+          <a href="#about" class="nav-link">About</a>
+        </nav>
+        <a href="#" class="nav-logo">
+          <img src="./asset/Group 1000001576 (1).png" alt="Logo AZZAM." />
+        </a>
+        <nav class="nav-menu">
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <!-- Hero -->
+    <section id="hero" class="hero">
+      <div class="hero-bg">
+        <span>Web devoloper</span>
+      </div>
+      <div class="hero-content">
+        <p>WELCOME TO MY PORTFOLIO</p>
+        <h1>I'm a creative<br />digital designer</h1>
+      </div>
+    </section>
     
-   </nav>
-  </header>  
-</body>
+    <!-- About -->
+    <section id="about" class="about">
+      <div class="about-text">
+        <h2>
+          Design that tells<br />
+          your story better
+        </h2>
+        <p>
+          Hi there, <span>Azzam</span> here! I’m a Visual Designer, focused in
+          Branding, Digital Design, and Visual Identity.
+        </p>
+        <button>Explore More About Me</button>
+      </div>
+
+      <div class="about-image">
+        <img src="./asset/Profile.png" alt="Profile" />
+      </div>
+    </section>
+
+    <!-- Services / Skills -->
+    <section id="services" class="services">
+      <div class="service-card">
+        <div class="service-icon">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+          <span class="line line4"></span>
+        </div>
+        <h3>Product design</h3>
+        <p>
+          Creating simple and useful products with a strong focus on user
+          experience.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+          <span class="line line4"></span>
+        </div>
+        <h3>Art direction</h3>
+        <p>
+          Building creative visual concepts that communicate ideas in a unique
+          way.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+          <span class="line line4"></span>
+        </div>
+        <h3>Visual design</h3>
+        <p>
+          Designing memorable visuals for brands, websites and digital
+          experiences.
+        </p>
+      </div>
+    </section>
+
+    <!-- Project / Works -->
+    <section id="projects" class="works">
+      <h2>My latest work</h2>
+
+      <div class="works-container">
+        <div class="work-card">
+          <img src="./asset/project3.png" alt="Project 1" />
+          <h3>Design web nike</h3>
+          <p>Web design figma</p>
+        </div>
+
+        <div class="work-card">
+          <img src="./asset/project2.png" alt="Project 2" />
+          <h3>Project porfolio</h3>
+          <p>Visual Design</p>
+        </div>
+
+        <div class="work-card">
+          <a href="https://abudzarproject.com/velvora/" target="_blank">
+            <img src="./asset/project4.png" alt="Project 4" />
+          </a>
+          <h3>vervora website</h3>
+          <p>web ecommerce</p>
+        </div>
+
+        <div class="work-card">
+          <img src="./asset/project5.jpg" alt="Project 5" />
+          <h3>Arduino Voltage And Frequency</h3>
+          <p>Simulation Tinkercad</p>
+        </div>
+
+        <div class="work-card">
+          <img src="./asset/project6.png" alt="Project 6" />
+          <h3>rc car project</h3>
+          <p>robitic arduino</p>
+        </div>
+
+        <div class="work-card">
+          <img src="./asset/project7.jpg" alt="Project 7" />
+          <h3>Intersection Traffic Lights</h3>
+          <p>robitic arduino</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      <h2>Get in Touch</h2>
+      <div class="contact-box">
+        <div class="contact-form">
+    
+          <label>Name*</label>
+          <input type="text" placeholder="Your name" />
+
+          <label>Best email to reach you*</label>
+          <input type="email" placeholder="lorem@gmail.com" />
+
+          <button>Let's Build Something</button>
+        </div>
+
+        <div class="contact-image">
+          <img src="./asset/Vector.png" alt="Contact" />
+        </div>
+      </div>
+    </section>
+  </body>
 </html>

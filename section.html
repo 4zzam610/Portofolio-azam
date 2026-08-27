@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .tools-minimal {
+        padding: 60px 20px;
+        text-align: center;
+        background: var(--bg-color, #1a1a1a);
+      }
+
+      .section-tag {
+        color: var(--text-secondary, #a0a0a0);
+        font-family: var(--font-nav);
+        font-size: 11px;
+        letter-spacing: 3px;
+        margin-bottom: 24px;
+      }
+
+      .tools-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        flex-wrap: wrap;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .tool-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid var(--border-color, #2e2e2e);
+        padding: 8px 16px;
+        border-radius: 999px;
+        transition: all 0.3s ease;
+        cursor: default;
+      }
+
+      .tool-pill img {
+        width: 20px;
+        height: 20px;
+        object-fit: contain;
+      }
+
+      .tool-pill span {
+        color: var(--text-color, #ffffff);
+        font-family: var(--font-nav);
+        font-size: 13px;
+        font-weight: 500;
+      }
+
+      .tool-pill:hover {
+        background: rgba(255, 139, 61, 0.1);
+        border-color: var(--primary-color, #ff8b3d);
+        transform: translateY(-2px);
+      }
+    </style>
+  </head>
+  <body>
+    <section class="tools-minimal">
+      <div class="container">
+        <p class="section-tag">— TECH STACK & TOOLS —</p>
+
+        <div class="tools-wrapper">
+          <!-- Figma -->
+          <div class="tool-pill">
+            <img src="images/figma.svg" alt="Figma" />
+            <span>Figma</span>
+          </div>
+
+          <!-- HTML5 -->
+          <div class="tool-pill">
+            <img src="images/html5.svg" alt="HTML5" />
+            <span>HTML5</span>
+          </div>
+
+          <!-- CSS3 -->
+          <div class="tool-pill">
+            <img src="images/css3.svg" alt="CSS3" />
+            <span>CSS3</span>
+          </div>
+
+          <!-- WordPress -->
+          <div class="tool-pill">
+            <img src="images/wordpress.png" alt="WordPress" />
+            <span>WordPress</span>
+          </div>
+
+          <!-- Scratch -->
+          <div class="tool-pill">
+            <img src="images/scratch.svg" alt="Scratch" />
+            <span>Scratch</span>
+          </div>
+
+          <!-- Tinkercad -->
+          <div class="tool-pill">
+            <img src="images/tinkercad.svg" alt="Tinkercad" />
+            <span>Tinkercad</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
