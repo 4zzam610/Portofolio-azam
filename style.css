@@ -219,7 +219,7 @@ a {
   width: 100%;
   min-height: 40vh;
   padding: 60px 30px;
-  background:(var(--bg-color));
+  background: var(--bg-color); 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -231,7 +231,9 @@ a {
   justify-content: center;
   gap: 15px;
   flex: 1;
+  flex-wrap: wrap; 
 }
+
 .skill-card {
   width: 190px;
   height: 100px;
@@ -242,7 +244,27 @@ a {
   align-items: center;
   justify-content: center;
   gap: 12px;
+  padding: 10px; 
+  transition: transform 0.3s ease;
 }
+
+.skill-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--primary-color);
+}
+.skill-card img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+.skill-card span {
+  color: var(--text-color);
+  font-family: var(--font-nav);
+  font-size: 14px;
+  font-weight: 600;
+}
+
 .tools {
   flex-shrink: 0;
   color: var(--text-color);
