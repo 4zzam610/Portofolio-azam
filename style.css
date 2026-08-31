@@ -155,13 +155,10 @@ a {
 .about {
   width: 100%;
   height: 100vh;
-
   background-color: var(--bg-color);
-
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   padding: 0 10.5%;
   gap: 80px;
 }
@@ -219,7 +216,7 @@ a {
   width: 100%;
   min-height: 40vh;
   padding: 60px 30px;
-  background: var(--bg-color); 
+  background: var(--bg-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -231,7 +228,7 @@ a {
   justify-content: center;
   gap: 15px;
   flex: 1;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
 }
 
 .skill-card {
@@ -244,7 +241,7 @@ a {
   align-items: center;
   justify-content: center;
   gap: 12px;
-  padding: 10px; 
+  padding: 10px;
   transition: transform 0.3s ease;
 }
 
@@ -264,7 +261,6 @@ a {
   font-size: 14px;
   font-weight: 600;
 }
-
 .tools {
   flex-shrink: 0;
   color: var(--text-color);
@@ -283,7 +279,7 @@ a {
 .works h2 {
   color: var(--text-color);
   font-family: var(--font-family);
-  font-size:70px;
+  font-size: 70px;
   line-height: 0.8;
   text-align: center;
   margin-bottom: 45px;
@@ -325,7 +321,6 @@ a {
   overflow: hidden;
   padding: 70px 8%;
 }
-
 .contact h2 {
   color: var(--text-color);
   font-family: var(--font-family);
@@ -333,7 +328,6 @@ a {
   line-height: 0.85;
   text-align: center;
 }
-
 .contact-box {
   width: 80%;
   max-width: 900px;
@@ -345,7 +339,6 @@ a {
   position: relative;
   z-index: 2;
 }
-
 .contact-form {
   width: 60%;
 }
@@ -357,7 +350,6 @@ a {
   margin-top: 15px;
   font-weight: bold;
 }
-
 .contact-form input {
   width: 100%;
   border: none;
@@ -367,11 +359,9 @@ a {
   padding: 8px 0;
   color: #191919;
 }
-
 .contact-form input::placeholder {
   color: rgba(25, 25, 25, 0.4);
 }
-
 .contact-form button {
   width: 100%;
   margin-top: 25px;
@@ -383,15 +373,231 @@ a {
   cursor: pointer;
   font-weight: bold;
 }
-
 .contact-image {
   width: 40%;
   display: flex;
   justify-content: center;
 }
-
 .contact-image img {
   width: 220px;
   max-width: 100%;
   object-fit: contain;
+}
+/* RESPONSIVE */
+@media (max-width: 767px) {
+  .header {
+    bottom: 15px;
+    max-width: calc(100% - 20px);
+    padding: 6px 10px;
+  }
+
+  .nav-container {
+    gap: 8px;
+  }
+
+  .nav-logo img {
+    height: 28px;
+  }
+
+  .nav-link {
+    font-size: 11px;
+    padding: 6px 8px;
+  }
+
+  .hero {
+    min-height: 100svh;
+  }
+
+  .hero-bg span {
+    font-size: 25vw;
+    -webkit-text-stroke: 1px var(--primary-color);
+  }
+
+  .hero-content {
+    width: 90%;
+  }
+
+  .hero-content p {
+    font-size: 9px;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+  }
+
+  .hero-content h1 {
+    font-size: 45px;
+  }
+
+  .about {
+    min-height: auto;
+    padding: 90px 7%;
+    flex-direction: column;
+    text-align: center;
+    gap: 45px;
+  }
+
+  .about-text {
+    width: 100%;
+  }
+
+  .about-text h2 {
+    font-size: 38px;
+  }
+
+  .about-text p {
+    font-size: 14px;
+    margin-bottom: 35px;
+  }
+
+  .about-image {
+    width: 270px;
+    height: 320px;
+  }
+
+  .skills {
+    min-height: auto;
+    padding: 70px 20px;
+    flex-direction: column;
+  }
+
+  .tools {
+    writing-mode: horizontal-tb;
+    font-size: 35px;
+  }
+
+  .skills-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .skill-card {
+    width: 100%;
+    height: 90px;
+  }
+
+  .skill-card img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .skill-card span {
+    font-size: 12px;
+  }
+
+  .works {
+    min-height: auto;
+    padding: 80px 7%;
+  }
+
+  .works h2 {
+    font-size: 50px;
+  }
+
+  .works-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .work-card img {
+    height: auto;
+    aspect-ratio: 16 / 10;
+  }
+
+  .contact {
+    min-height: auto;
+    padding: 80px 7% 130px;
+  }
+
+  .contact h2 {
+    font-size: 70px;
+  }
+
+  .contact-box {
+    width: 100%;
+    margin: 0 auto;
+    flex-direction: column;
+    gap: 30px;
+    padding: 25px 20px;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  .contact-image {
+    width: 100%;
+  }
+
+  .contact-image img {
+    width: 160px;
+  }
+}
+@media (max-width: 480px) {
+  .header {
+    bottom: 10px;
+    max-width: calc(100% - 12px);
+    padding: 5px 7px;
+  }
+
+  .nav-link {
+    font-size: 9px;
+    padding: 5px 6px;
+  }
+
+  .nav-logo img {
+    height: 24px;
+  }
+
+  .hero-content h1 {
+    font-size: 38px;
+  }
+
+  .hero-content p {
+    font-size: 8px;
+  }
+
+  .about {
+    padding: 75px 6%;
+  }
+
+  .about-text h2 {
+    font-size: 32px;
+  }
+
+  .about-image {
+    width: 230px;
+    height: 280px;
+  }
+
+  .skill-card {
+    height: 80px;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .skill-card img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .skill-card span {
+    font-size: 10px;
+  }
+
+  .works {
+    padding: 75px 6%;
+  }
+
+  .works h2 {
+    font-size: 45px;
+  }
+
+  .contact {
+    padding: 75px 6% 120px;
+  }
+
+  .contact h2 {
+    font-size: 55px;
+  }
 }
